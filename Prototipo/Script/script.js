@@ -42,3 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+//Hacemos que aparezca el mensaje de "Vaciando Carrito".
+//Espera 13 segundos (13000 milisegundos) y muestra el div
+        setTimeout(function() {
+            document.getElementById("mensajeCarrito").style.display = "block";
+        }, 13000);

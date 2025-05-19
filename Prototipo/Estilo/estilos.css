@@ -148,6 +148,19 @@ button:hover, .botones:hover {
   font-size: 18px;
 }
 
+/*Para el mensaje de "Vaciando Carrito..."*/
+#mensajeCarrito {
+  display: none; /* Oculto inicialmente */
+  background-color: #483d8b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
 /* Mensaje de Notificaciones Activas 
 -> La clase que ocupa el JavaScript para crear el mensaje en un nuevo div*/
 .mensaje-notificacion {
