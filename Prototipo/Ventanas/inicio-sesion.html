@@ -25,12 +25,13 @@
   <div class="contenedor-pagina">
     <h1 style="text-transform: uppercase; text-decoration: underline;">Cultura Eats</h1>
     <h2>Iniciar Sesión</h2>
-    <form>
+    <form action="inicio-sesion-exito.html" method="post">
       <label for="correo-login">Correo:</label>
-      <input type="email" id="correo-login" placeholder="correo@ejemplo.com">
+      <input type="email" id="correo-login" name="correo"  placeholder="correo@ejemplo.com" required>
       <label for="contrasena-login">Contraseña:</label>
-      <input type="password" id="contrasena-login" placeholder="********">
+      <input type="password" id="contrasena-login" name="contraseña" placeholder="********" required>
       <a href="inicio-sesion-exito.html" class="botones">Iniciar Sesión</a>
+      <button type="submit" class="botones">Iniciar sesión button</button>
     </form>
   </div>
 </body>
