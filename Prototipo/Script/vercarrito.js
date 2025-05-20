@@ -2,9 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const carritoLista = document.getElementById('carrito-lista');
   const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-  // Si el carrito está vacío, mostrar un mensaje
+  // Si el carrito está vacío, mostrar un mensaje en el formato original
   if (carrito.length === 0) {
-    carritoLista.innerHTML = '<div class="carta-platos"><span>El carrito está vacío.</span><span></span></div>';
+    carritoLista.innerHTML = `
+      <div class="carta-platos"><span>El carrito está vacío.</span><span></span></div>
+    `;
     return;
   }
 
