@@ -24,20 +24,20 @@
   <div class="contenedor-pagina">
     <h1 style="text-transform: uppercase; text-decoration: underline;">Cultura Eats</h1>
     <h2>Administrar Cuenta</h2>
-    <form>
+    <form action="administra-cuenta-exitoso.html" method="post">
       <h3>Datos Personales</h3>
       <label for="nombre-cuenta">Nombre:</label>
-      <input type="text" id="nombre-cuenta" placeholder="Juan Pérez">
+      <input type="text" id="nombre-cuenta" placeholder="Juan Pérez" required>
       <label for="correo-cuenta">Correo:</label>
-      <input type="email" id="correo-cuenta" placeholder="juan@ejemplo.com">
+      <input type="email" id="correo-cuenta" placeholder="juan@ejemplo.com" required>
       <label for="contrasena-cuenta">Contraseña:</label>
-      <input type="password" id="contrasena-cuenta" placeholder="********">
+      <input type="password" id="contrasena-cuenta" placeholder="********" required>
       <h3>Método de Pago</h3>
       <label for="numero-tarjeta">Número de Tarjeta:</label>
-      <input type="text" id="numero-tarjeta" placeholder="**** **** **** 1234">
+      <input type="text" id="numero-tarjeta" placeholder="**** **** **** 1234" required>
       <label for="fecha-vencimiento">Fecha de Vencimiento:</label>
-      <input type="text" id="fecha-vencimiento" placeholder="12/25">
-      <button type="button">Guardar Cambios</button>
+      <input type="text" id="fecha-vencimiento" placeholder="12/25" required>
+      <button type="submit" class="botones" style="font-size: 1rem;">Guardar Cambios</button>
     </form>
   </div>
 </body>
