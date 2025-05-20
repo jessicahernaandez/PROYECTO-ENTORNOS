@@ -1,36 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const carritoLista = document.getElementById('carrito-lista');
-  const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+// vercarrito.js
+document.addEventListener("DOMContentLoaded", () => {
+  const carritoLista = document.getElementById("carrito-lista");
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-  // Si el carrito está vacío, mostrar un mensaje en el formato original
   if (carrito.length === 0) {
-    carritoLista.innerHTML = `
-      <div class="carta-platos"><span>El carrito está vacío.</span><span></span></div>
-    `;
+    carritoLista.innerHTML = "<p>El carrito está vacío.</p>";
     return;
   }
 
-  // Generar los elementos del carrito
   let total = 0;
   carrito.forEach(item => {
-    const subtotal = item.precio * item.cantidad;
-    total += subtotal;
+    const itemDiv = document.createElement("div");
+    itemDiv.classList.add("carta-platos");
 
-    const div = document.createElement('div');
-    div.className = 'carta-platos';
-    div.innerHTML = `
-      <span>${item.nombre}</span>
-      <span>$${subtotal.toFixed(2)}</span>
-    `;
-    carritoLista.appendChild(div);
+    const nombreSpan = document.createElement("span");
+    nombreSpan.textContent = item.nombre;
+
+    const precioSpan = document.createElement("span");
+    precioSpan.textContent = `$${item.precio.toFixed(2)}`;
+
+    itemDiv.appendChild(nombreSpan);
+    itemDiv.appendChild(precioSpan);
+
+    carritoLista.appendChild(itemDiv);
+
+    total += item.precio;
   });
 
-  // Mostrar el total
-  const totalDiv = document.createElement('div');
-  totalDiv.className = 'carta-platos';
-  totalDiv.innerHTML = `
-    <span>Total</span>
-    <span>$${total.toFixed(2)}</span>
-  `;
+  // Mostrar total
+  const totalDiv = document.createElement("div");
+  totalDiv.classList.add("carta-platos", "total");
+
+  const totalLabel = document.createElement("span");
+  totalLabel.textContent = "Total";
+
+  const totalPrecio = document.createElement("span");
+  totalPrecio.textContent = `$${total.toFixed(2)}`;
+
+  totalDiv.appendChild(totalLabel);
+  totalDiv.appendChild(totalPrecio);
   carritoLista.appendChild(totalDiv);
 });
