@@ -1333,11 +1333,11 @@
 												"$ref": "AAAAAAGW2nUpgZ2Yx/4="
 											},
 											"font": "Arial;13;1",
-											"left": 1250.5,
+											"left": 1255,
 											"top": 542.5,
-											"width": 130,
+											"width": 152,
 											"height": 13,
-											"text": "Gestionar Carrito"
+											"text": "Seguir Estado de Pedido"
 										},
 										{
 											"_type": "LabelView",
@@ -1366,9 +1366,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1245.5,
+									"left": 1250,
 									"top": 535.5,
-									"width": 140,
+									"width": 163.13720703125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGW2nUpgZ2ZXqU="
@@ -1463,7 +1463,7 @@
 							"containerChangeable": true,
 							"left": 1216,
 							"top": 512,
-							"width": 199,
+							"width": 230,
 							"height": 73,
 							"nameCompartment": {
 								"$ref": "AAAAAAGW2nUpgZ2Yx/4="
@@ -3571,7 +3571,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1076,
-									"top": 514,
+									"top": 513,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -3592,7 +3592,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 1077,
-									"top": 499,
+									"top": 498,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -3613,7 +3613,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1075,
-									"top": 543,
+									"top": 542,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -3634,7 +3634,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 963,
-									"top": 508,
+									"top": 507,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 30,
@@ -3655,7 +3655,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 966,
-									"top": 495,
+									"top": 494,
 									"height": 13,
 									"alpha": 0.7853981633974483,
 									"distance": 40,
@@ -3676,7 +3676,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 957,
-									"top": 535,
+									"top": 534,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -3697,7 +3697,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1189,
-									"top": 520,
+									"top": 519,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -3717,7 +3717,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1188,
-									"top": 507,
+									"top": 506,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -3737,7 +3737,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 1192,
-									"top": 548,
+									"top": 547,
 									"height": 13,
 									"alpha": 0.5235987755982988,
 									"distance": 25,
@@ -3782,7 +3782,7 @@
 								"$ref": "AAAAAAGW2oeWostOheY="
 							},
 							"lineStyle": 1,
-							"points": "937:528;1215:543",
+							"points": "937:527;1215:542",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGW2okUwNcvAGo="
@@ -6554,7 +6554,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Gestionar Carrito"
+					"name": "Seguir Estado de Pedido"
 				},
 				{
 					"_type": "UMLActor",
@@ -31237,7 +31237,7 @@
 											"font": "Arial;13;0",
 											"left": 48,
 											"top": 64,
-											"width": 45.53173828125,
+											"width": 46,
 											"height": 13,
 											"text": "«entity»"
 										},
